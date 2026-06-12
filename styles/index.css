@@ -7,7 +7,9 @@
     --main-bg-color: #092447;
 
     --primary-color: #40dfaf;
+    /* --primary-color: #30d884; */
     --secondary-color: #ff751f;
+    --secondary-color-alpha50: #ff751f81;
 
 
     /* #ff6f61 */
@@ -18,7 +20,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 body {
@@ -143,6 +145,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    gap: 1rem;
 
     width: 80%;
     height: 100vh;
@@ -153,7 +156,8 @@ a {
 }
 
 .hero-section h2 {
-    
+    font-weight: 600;
+    line-height: 100%;
 }
 
 .hero-section h2 .green-highlight-text {
@@ -166,6 +170,54 @@ a {
 }
 
 .hero-section .buttons {
+    /* padding-block: 0.5rem; */
+    display: flex;
+    justify-content: left;
+    gap: 1.2rem;
+}
+
+.hero-section .buttons .btn {
+    font-size: 0.7rem;
+    font-weight: 530;
+    border: 1px solid transparent;
+    padding: 0.4rem 1rem;
+    border-radius: 2.5px;
+
+}
+
+.hero-section .buttons .btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--main-bg-color);
+    border: 1px solid var(--secondary-color);
+
+    transition: 0.3s ease;
+}
+.hero-section .buttons .btn-primary:hover {
+    cursor: pointer;
+
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+
+    box-shadow: 0px 0px 8px var(--secondary-color-alpha50);
+}
+
+.hero-section .buttons .btn-secondary {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+
+    transition: 0.3s ease;
+
+}
+.hero-section .buttons .btn-secondary:hover {
+    cursor: pointer;
+
+    background-color: var(--secondary-color);
+    color: var(--main-bg-color);
+    border: 1px solid var(--secondary-color);
+
+    box-shadow: 0px 0px 8px var(--secondary-color-alpha50);
 }
 
 
