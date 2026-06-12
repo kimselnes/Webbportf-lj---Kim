@@ -52,7 +52,7 @@ a {
     height: 100vh;
     width: 40%;
     max-width: 200px;
-    /* border-right: 1px solid #264f8565; */
+    border-right: 1px solid #264f8565;
 
 }
 
@@ -155,6 +155,16 @@ a {
     width: 60%;
 }
 
+.hero-section .hero-intro {
+    font-size: 0.5rem;
+    background-color: #40dfaf46;
+    width: fit-content;
+
+    padding: 0.2rem 0.5rem;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 2.5px;
+}
+
 .hero-section h2 {
     font-weight: 600;
     line-height: 100%;
@@ -167,6 +177,9 @@ a {
 .hero-description {
     font-weight: 300;
     font-size: 0.5rem;
+
+    border-left: 2px solid var(--primary-color);
+    padding-left: 0.5rem;
 }
 
 .hero-section .buttons {
