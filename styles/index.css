@@ -5,6 +5,12 @@
 :root {
     --nav-bg-color: #051a36;
     --main-bg-color: #092447;
+
+    --primary-color: #40dfaf;
+    --secondary-color: #ff751f;
+
+
+    /* #ff6f61 */
 }
 
 *, *::before, *::after {
@@ -12,7 +18,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 
 body {
@@ -120,12 +126,47 @@ a {
 
 
 .main-content {
+    color: white;
     background-color: var(--main-bg-color);
     /* width: 60%; */
     width: 100%;
-    height: 200vh;
+    /* height: 200vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* HERO SECTION */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    width: 80%;
+    height: 100vh;
+}
+
+.hero-section:nth-child(1) {
+    width: 60%;
+}
+
+.hero-section h2 {
+    
+}
+
+.hero-section h2 .green-highlight-text {
+    color: var(--primary-color);
+}
+
+.hero-description {
+    font-weight: 300;
+    font-size: 0.5rem;
+}
+
+.hero-section .buttons {
+}
 
 
 
