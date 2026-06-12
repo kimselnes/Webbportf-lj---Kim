@@ -241,6 +241,9 @@ a {
 
 /* KNOWLEDGE SECTION */
 
-
+.knowledge-icon img{
+    width: 2rem;
+    height: 2rem;
+}
 
 
