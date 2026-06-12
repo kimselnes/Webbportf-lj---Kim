@@ -180,6 +180,7 @@ a {
 
     border-left: 2px solid var(--primary-color);
     padding-left: 0.5rem;
+    border-radius: 2.5px; /* Vet inte om jag vill ah denna*/
 }
 
 .hero-section .buttons {
