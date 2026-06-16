@@ -21,7 +21,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 
 body {
@@ -118,8 +118,7 @@ a {
 }
 
 
-
-
+/* MAIN */
 
 .main-content {
     color: white;
@@ -132,12 +131,14 @@ a {
     align-items: center;
 }
 
+
 /* HERO SECTION */
 
 .hero-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     justify-content: center;
+    /* margin-top: 5rem; */  /* EVENTUELLT FOR ATT FÖRHINDRA TOP WHITE SPACE */
     align-items: left;
     gap: 1rem;
 
@@ -234,6 +235,9 @@ a {
 
 
 /* KNOWLEDGE SECTION */
+
+
+
 
 .knowledge-icon img{
     width: 2rem;
