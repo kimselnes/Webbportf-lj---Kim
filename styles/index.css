@@ -24,7 +24,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 
 body {
@@ -405,4 +405,31 @@ h2 {
 }
 
 
+/* FOOTER */
 
+footer {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    background-color: var(--nav-bg-color);
+}
+
+.attributes {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5rem;
+
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    a:visited {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+    }
+}
