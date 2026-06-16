@@ -245,7 +245,6 @@ h2 {
 .knowledge-description {
     font-size: 0.8rem;
     padding-block: 0.5rem;
-
 }
 
 /* .knowledge-section h2, .knowledge-description {
@@ -295,5 +294,53 @@ h2 {
     border-top: var(--primary-color) solid 0.7px;
     background-color: #0a3d2e4b;
 }
+
+
+
+/* Projects */
+
+.projects-section {
+    width: 80%;
+    height: fit-content;
+    padding-block: 3rem;
+}
+
+.projects-section p {
+    font-size: 0.8rem;
+    padding-block: 0.5rem;
+}
+
+.project-item {
+    border: white solid 1px;
+}
+
+.project-item-image {
+
+}
+
+.project-snapshot {
+    width: 50px
+}
+
+.project-item-text {
+
+}
+
+.project-title {
+
+}
+
+.project-description {
+
+}
+
+.project-tags {
+
+}
+
+.tag {
+
+}
+
 
 
