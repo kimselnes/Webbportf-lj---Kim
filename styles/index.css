@@ -21,7 +21,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 body {
@@ -160,12 +160,12 @@ a {
     border-radius: 2.5px;
 }
 
-.hero-section h2 {
+h2 {
     font-weight: 600;
     line-height: 100%;
 }
 
-.hero-section h2 .green-highlight-text {
+.green-highlight-text {
     color: var(--primary-color);
 }
 
@@ -236,12 +236,64 @@ a {
 
 /* KNOWLEDGE SECTION */
 
+.knowledge-section {
+    width: 80%;
+    height: fit-content;
+    padding-block: 3rem;
+}
 
+.knowledge-description {
+    font-size: 0.8rem;
+    padding-block: 0.5rem;
 
+}
+
+/* .knowledge-section h2, .knowledge-description {
+    padding-left: 3px;
+} */
+
+/* container for all the "cards" */
+.knowledge-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 3px;
+}
+
+/* knowledge "cards" */
+.knowledge-card {
+    /* display: flex; */
+    /* flex-direction: column; */
+
+    /* width: auto; */
+    /* max-height: 150px; */
+    /* height: 100px; */
+    text-align: center;
+    /* padding-block: 0.5rem; */
+
+    
+    border: 0.7px solid var(--primary-color);
+    border-radius: 2.5px;
+
+}
+
+.knowledge-icon {
+    padding-top: 0.5rem;
+    background-color: #40dfaf46;
+}
 
 .knowledge-icon img{
-    width: 2rem;
-    height: 2rem;
+    width: auto;
+    height: 4rem;
+}
+
+.knowledge-title {
+    font-size: 0.7rem;
+    padding-block: 0.25rem;
+    padding-bottom: auto;
+
+    border-top: var(--primary-color) solid 0.7px;
+    background-color: #0a3d2e4b;
 }
 
 
