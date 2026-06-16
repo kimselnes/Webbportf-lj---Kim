@@ -8,10 +8,13 @@
     --main-bg-color: #092447;
 
     --primary-color: #40dfaf;
+    --primary-color-bright: #4bffc9;
     /* --primary-color: #30d884; */
     --secondary-color: #ff751f;
     --secondary-color-alpha50: #ff751f81;
 
+    --text-main-color: white;
+    --text-secondary-color: rgba(255, 255, 255, 0.767);
 
     /* #ff6f61 */
 }
@@ -303,43 +306,102 @@ h2 {
     width: 80%;
     height: fit-content;
     padding-block: 3rem;
+
 }
 
-.projects-section p {
-    font-size: 0.8rem;
+.projects-section h2 {
+    text-align: end;
+}
+
+.projects-section-subtitle-container {
+    display: flex;
+    justify-content: end;
+
+    width: 100%;
+}
+
+.projects-section-subtitle {
+    width: 50%;
+    font-size: 0.70rem;
     padding-block: 0.5rem;
+    color: var(--text-secondary-color);
+    text-align: end;
 }
 
 .project-item {
-    border: white solid 1px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 10px;
+    /* height: 70px; */
+    height: fit-content;
+
+    border: 0.7px solid var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+    /* border-radius: 2.5px; */
+
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.151);
+
+    
 }
 
 .project-item-image {
+    width: 30%;
 
+    background-color: #cccccc;
+    background-image: url("/assets/snapshot-kassasystem.png");
+    background-repeat: none;
+    background-size: cover; 
+    background-position: center;
 }
 
-.project-snapshot {
-    width: 50px
-}
+/* .project-snapshot {
+    width: 100px;
+} */
 
 .project-item-text {
+    width: 70%;
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+
+    background-color: #40dfaf2a;
 
 }
 
 .project-title {
-
+    font-size: 0.65rem;
+    font-weight: 400;
+    color: var(--primary-color-bright);
 }
 
 .project-description {
+    font-size: 0.35rem;
+    padding-block: 0.2rem;
+    color: var(--text-secondary-color);
 
 }
 
 .project-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 
+    gap: 0.5rem;
 }
 
 .tag {
+    font-size: 0.4rem;
+    line-height: 90%;
 
+    color: white;
+    background-color: #40dfaf46;
+    background-color: var(--secondary-color-alpha50);
+    width: fit-content;
+
+    /* padding: 0.1rem 0.25rem; */
+    padding: 2px 4px;
+    border: 0.5px solid var(--primary-color);
+    border: 0.5px solid var(--secondary-color);
+    border-radius: 2.5px;
 }
 
 
