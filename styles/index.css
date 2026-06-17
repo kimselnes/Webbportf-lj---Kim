@@ -281,12 +281,14 @@ h2 {
 .knowledge-section {
     width: 80%;
     height: fit-content;
-    padding-block: 3rem;
+    padding-block: 6rem;
 }
 
 .knowledge-description {
-    font-size: 0.8rem;
-    padding-block: 0.5rem;
+    font-size: 1.8rem;
+    padding-block: 2rem;
+    padding-bottom: 3rem;
+    color: var(--text-secondary-color);
 }
 
 /* .knowledge-section h2, .knowledge-description {
@@ -297,8 +299,8 @@ h2 {
 .knowledge-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.6rem;
 }
 
 /* knowledge "cards" */
@@ -313,23 +315,23 @@ h2 {
     /* padding-block: 0.5rem; */
 
     
-    border: 0.7px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 2.5px;
 
 }
 
 .knowledge-icon {
-    padding-top: 0.5rem;
+    padding: 1.5rem 0 0.8rem 0;
     background-color: #40dfaf46;
 }
 
 .knowledge-icon img{
     width: auto;
-    height: 4rem;
+    height: 10rem;
 }
 
 .knowledge-title {
-    font-size: 0.7rem;
+    font-size: 1.6rem;
     padding-block: 0.25rem;
     padding-bottom: auto;
 
