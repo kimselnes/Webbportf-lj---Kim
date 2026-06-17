@@ -45,6 +45,11 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-weight: 600;
+    line-height: 100%;
+}
+
 
 /* HEADER */
 
@@ -161,11 +166,6 @@ a {
     padding: 0.2rem 0.5rem;
     border: 0.5px solid var(--primary-color);
     border-radius: 2.5px;
-}
-
-h2 {
-    font-weight: 600;
-    line-height: 100%;
 }
 
 .green-highlight-text {
@@ -413,6 +413,37 @@ h2 {
     padding-block: 3rem;
 }
 
+.contact-text {
+
+}
+
+.contact-text p {
+    font-size: 0.70rem;
+    padding-block: 0.5rem;
+    color: var(--text-secondary-color);
+}
+
+.contact-info-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 50%;
+    padding: 1rem;
+}
+
+.contact-form-container {
+    width: 50%;
+    padding: 1rem;
+
+    border: 1px solid var(--primary-color-bright);
+}
+
+.contact-form {
+
+}
 
 /* FOOTER */
 
