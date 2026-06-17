@@ -24,7 +24,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 body {
@@ -46,6 +46,7 @@ a {
 }
 
 h2 {
+    font-size: 3.5rem;
     font-weight: 600;
     line-height: 100%;
 }
@@ -184,7 +185,7 @@ h2 {
     justify-content: center;
     /* margin-top: 5rem; */  /* EVENTUELLT FOR ATT FÖRHINDRA TOP WHITE SPACE */
     align-items: left;
-    gap: 1rem;
+    gap: 1.5rem;
 
     width: 80%;
     height: 100vh;
@@ -195,11 +196,11 @@ h2 {
 }
 
 .hero-section .hero-intro {
-    font-size: 0.5rem;
+    font-size: 1.25rem;
     background-color: #40dfaf46;
     width: fit-content;
 
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 1.25rem;
     border: 0.5px solid var(--primary-color);
     border-radius: 2.5px;
 }
@@ -210,11 +211,11 @@ h2 {
 
 .hero-description {
     font-weight: 300;
-    font-size: 0.5rem;
+    font-size: 1.25rem;
 
-    border-left: 2px solid var(--primary-color);
-    padding-left: 0.5rem;
-    border-radius: 2.5px; /* Vet inte om jag vill ah denna*/
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    /* border-radius: 2.5px; Vet inte om jag vill ah denna */
 }
 
 .hero-section .buttons {
@@ -222,13 +223,15 @@ h2 {
     display: flex;
     justify-content: left;
     gap: 1.2rem;
+
+    margin-top: 1.5rem;
 }
 
 .hero-section .buttons .btn {
-    font-size: 0.7rem;
+    font-size: 1.8rem;
     font-weight: 530;
     border: 1px solid transparent;
-    padding: 0.4rem 1rem;
+    padding: 0.8rem 2rem;
     border-radius: 2.5px;
 
 }
