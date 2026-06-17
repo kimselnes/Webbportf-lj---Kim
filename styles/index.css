@@ -24,7 +24,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 body {
@@ -412,24 +412,35 @@ footer {
     height: fit-content;
     padding: 1rem;
     background-color: var(--nav-bg-color);
+
+    display: flex;
 }
 
 .attributes {
-    text-decoration: none;
-    color: white;
-    font-size: 0.5rem;
+    width: 50%;
+    /* color: rgba(255, 255, 255, 0.6); */
+    font-size: 0.45rem;
 
     a:link {
-        color: white;
-        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+        /* text-decoration: none; */
     }
     a:visited {
-        color: white;
-        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        /* text-decoration: none; */
     }
     a:hover {
         text-decoration: underline;
     }
     a:active {
+        color: rgba(255, 255, 255, 0.8);
     }
 }
+
+.attributes a {
+    display:inline-block;
+}
+
+.footer-text {
+    width: 50%;
+}   
