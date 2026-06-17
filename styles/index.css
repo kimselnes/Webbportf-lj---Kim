@@ -24,7 +24,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 
 body {
@@ -60,7 +60,7 @@ h2 {
     background-color: var(--nav-bg-color);
     height: 100vh;
     width: 40%;
-    max-width: 200px;
+    /* max-width: 600px; */
     border-right: 1px solid #264f8565;
 
 }
@@ -71,23 +71,33 @@ h2 {
     align-items: center;
     justify-content: center;
 
+    height: 25%;
     padding-block: 2rem;
+}
+
+.nav-section {
+    height: 40%;
+    /* height: fit-content; */
+}
+.nav-section ul {
+    height: 100%;
 }
 
 .header .nav-item {
     display: flex;
     justify-content: left;
-    height: 2rem;
+    /* height: 2rem; */
+    height: 20%;
 }
 .header .nav-item:hover {
 
     .nav-item-decoration {
-        width: 2rem;
+        width: 6rem;
         background-color: white;
     }
     
     .nav-item-decoration-space {
-        width: 4rem;
+        width: fit-content;
     }
 
     a {
@@ -96,20 +106,20 @@ h2 {
 }
 
 .header .nav-item .nav-item-decoration-space {
-    margin-left: 8%;
-    width: 2rem;
+    margin-left: 16%;
+    margin-right: 4%;
+    width: fit-content;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     cursor: pointer;
     transition: 0.3s ease;
-
 }
 
 .header .nav-item .nav-item-decoration {
-    width: 0.6rem;
-    height: 0.2rem;
+    width: 1.2rem;
+    height: 0.4rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
 
@@ -119,10 +129,36 @@ h2 {
 .header .nav-item a {
     align-self: center;
     color: rgba(255, 255, 255, 0.7);
-    font-size: 0.6rem;
-
+    font-size: 1.5rem;
     transition: 0.3s ease;
 
+}
+
+.nav-socialmedia{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+
+    margin-top: 35%;
+}
+
+.socialmedia-item {
+    
+}
+
+.nav-socialmedia-item {
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav-socialmedia-item a {
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav-socialmedia-item img {
+    width: 4rem;
 }
 
 
