@@ -480,9 +480,43 @@ h2 {
     grid-template-columns: 1fr 1fr;
 }
 
-.info-item img {
-    width: 3rem;
-    background-color: var(--primary-color-alpha50);
+.info-item{
+    display: flex;
+    gap: 1.4rem;
+    margin-block: 1rem;
+}
+
+.info-item-text {
+    align-self: center;
+    text-align: left;
+}
+
+.info-label {
+    color: var(--text-secondary-color);
+}
+
+/* .info-item img {
+    width: 5rem;
+    background-color: #40dfaf2a;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
+} */
+
+.info-icon {
+    width: 5rem;
+    background-color: #40dfaf2a;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.info-copy { /*SKA ÄNDRAS*/
+    width: 5rem;
+    background-color: #40dfaf2a;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .contact-info {
@@ -492,7 +526,7 @@ h2 {
 
 .contact-form-container {
     /* width: 50%; */
-    padding: 1rem;
+    padding: 1.5rem;
 
     background-color: #40dfaf2a;
     border: 1px solid var(--primary-color-bright);
@@ -518,6 +552,7 @@ h2 {
 .contact-form input {
     padding: 0.2rem;
     border: var(--primary-color) solid 2px;
+    border: none;
     border-radius: 2.5px;
 
     width:inherit;
@@ -533,6 +568,7 @@ h2 {
 
     padding: 0.2rem;
     border: var(--primary-color) solid 2px;
+    border: none;
     border-radius: 2.5px;
 }
 .contact-form textarea:hover {
