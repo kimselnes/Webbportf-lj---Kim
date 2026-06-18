@@ -9,9 +9,12 @@
 
     --primary-color: #40dfaf;
     --primary-color-bright: #4bffc9;
+    --primary-color-alpha50: #40dfaf7c;
+
     /* --primary-color: #30d884; */
     --secondary-color: #ff751f;
     --secondary-color-alpha50: #ff751f81;
+    --secondary-color-bright: #ffd7be;
 
     --text-main-color: white;
     --text-secondary-color: rgba(255, 255, 255, 0.767);
@@ -25,6 +28,10 @@
     box-sizing: border-box;
 
     /* border: 1px solid white; */
+}
+
+input, button, select, textarea {
+    font: inherit;
 }
 
 body {
@@ -459,27 +466,102 @@ h2 {
 }
 
 .contact-text p {
-    font-size: 0.70rem;
-    padding-block: 0.5rem;
+    font-size: 1.8rem;
+    padding-block: 2rem;
+    padding-bottom: 3rem;
     color: var(--text-secondary-color);
 }
 
 .contact-info-form {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info-item img {
+    width: 3rem;
+    background-color: var(--primary-color-alpha50);
 }
 
 .contact-info {
-    width: 50%;
+    /* width: 50%; */
     padding: 1rem;
 }
 
 .contact-form-container {
-    width: 50%;
+    /* width: 50%; */
     padding: 1rem;
 
+    background-color: #40dfaf2a;
     border: 1px solid var(--primary-color-bright);
+    border-radius: 2.5px;
+}
+
+.contact-form {
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+}
+
+.form-item {
+    display: grid;
+}
+
+.contact-form label {
+}
+
+.contact-form input {
+    padding: 0.2rem;
+    border: var(--primary-color) solid 2px;
+    border-radius: 2.5px;
+
+    width:inherit;
+
+    transition: 0.3s ease;
+}
+.contact-form input:hover {
+    background-color: var(--secondary-color-bright);    
+}
+
+.contact-form textarea {
+    resize: vertical;
+
+    padding: 0.2rem;
+    border: var(--primary-color) solid 2px;
+    border-radius: 2.5px;
+}
+.contact-form textarea:hover {
+    background-color: var(--secondary-color-bright);
+}
+
+#submit-button  {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 530;
+    border: 1px solid transparent;
+    padding: 0.6rem 2.4rem;
+    margin-top: 0.4rem;
+    border-radius: 2.5px;
+
+    background-color: var(--secondary-color);
+    color: var(--main-bg-color);
+    border: 1px solid var(--secondary-color);
+
+    transition: 0.3s ease;
+}
+#submit-button:hover {
+    cursor: pointer;
+
+    background-color: var(--secondary-color-alpha50);
+    color: white;
+    border: 1px solid var(--secondary-color);
+
+    box-shadow: 0px 0px 8px var(--secondary-color-alpha50);
 }
 
 .contact-form {
