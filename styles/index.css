@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
     /* border: 1px solid white; */
 }
@@ -121,6 +122,13 @@ h2 {
     }
 }
 
+.header .nav-item .nav-item-decoration-space .active {
+    width: 6rem;
+    background-color: var(--secondary-color);    
+}
+
+
+
 .header .nav-item .nav-item-decoration-space {
     margin-left: 16%;
     margin-right: 4%;
@@ -158,6 +166,22 @@ h2 {
 
     margin-top: 32%;
 }
+
+.nav-link {
+    width:fit-content
+}
+
+/* .header .nav-section .active li {
+
+    .nav-item-decoration {
+        width: 6rem;
+        background-color: var(--secondary-color);
+    }
+    
+    a {
+        color: var(--secondary-color);
+    }
+} */
 
 .socialmedia-item {
     

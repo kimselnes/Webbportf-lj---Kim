@@ -81,3 +81,26 @@ function phoneCopy() {
 }
 
 
+
+// Active Nav-items
+
+const navLinkElements = document.querySelectorAll(".nav-item-decoration");
+const sectionElements = document.querySelectorAll("section");
+
+let currentSection = "home";
+window.addEventListener("scroll", () => {
+    sectionElements.forEach(sectionEl => {
+        if (window.scrollY >= sectionEl.offsetTop) {
+            currentSection = sectionEl.id;
+        }
+    });
+
+    navLinkElements.forEach(navLinkEl => {
+       if (navLinkEl.href.includes(currentSection)) {
+            document.querySelector(".active").classList.remove("active");
+            navLinkEl.classList.add("active");
+            
+       } 
+    });
+
+});
