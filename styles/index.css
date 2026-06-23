@@ -505,18 +505,37 @@ h2 {
 
 .info-icon {
     width: 5rem;
-    background-color: #40dfaf2a;
-    border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: 1rem;
 }
 
-.info-copy { /*SKA ÄNDRAS*/
-    width: 5rem;
+.info-icon-green {
     background-color: #40dfaf2a;
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 1rem;
+    border: 2px solid var(--primary-color);
+}
+
+.info-icon-orange {
+    border: 2px solid var(--secondary-color);
+    background-color: #ff751f34;
+}
+
+.info-copy { /*SKA ÄNDRAS*/
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+    padding: 0.2rem;
+    margin-left: 0.2rem;
+    /* background-color: #40dfaf42; */
+    /* border-radius: 10px; */
+    /* padding: 1rem; */
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.info-copy:hover {
+    /* cursor: pointer; */
+    border: 2px solid rgb(173, 173, 173);
 }
 
 .contact-info {
@@ -547,24 +566,32 @@ h2 {
 }
 
 .contact-form label {
+
+    span {
+        color: var(--primary-color-bright);
+    }
 }
 
 .contact-form input {
-    padding: 0.2rem;
-    border: var(--primary-color) solid 2px;
+    padding: 0.4rem;
+    /* border: var(--primary-color) solid 2px; */
     border: none;
     border-radius: 2.5px;
-
-    width:inherit;
+    outline: none;
+    width: inherit;
 
     transition: 0.3s ease;
 }
 .contact-form input:hover {
     background-color: var(--secondary-color-bright);    
 }
+.contact-form input:focus {
+    border: none;
+}
 
 .contact-form textarea {
     resize: vertical;
+    outline: none;
 
     padding: 0.2rem;
     border: var(--primary-color) solid 2px;
@@ -598,6 +625,12 @@ h2 {
     border: 1px solid var(--secondary-color);
 
     box-shadow: 0px 0px 8px var(--secondary-color-alpha50);
+}
+
+.contact-error-message {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    color: rgb(255, 168, 183);
 }
 
 .contact-form {
