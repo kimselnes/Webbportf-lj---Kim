@@ -229,7 +229,7 @@
                             <p class="info-label">Email</p>
                             <p>kimsel1990@gmail.com</p>
                         </div>
-                        <img class="info-copy" src="assets/copy - Copy.png" alt="Copy to Clipboard Icon">
+                        <img class="info-copy" src="assets/copy - Copy.png" alt="Copy to Clipboard Icon" onclick="emailCopy()">
                     </div>
 
                     <div class="info-item">
@@ -238,7 +238,7 @@
                             <p class="info-label">Telefon</p>
                             <p>0760894025</p>
                         </div>
-                        <img class="info-copy" src="assets/copy - Copy.png" alt="Copy to Clipboard Icon">
+                        <img class="info-copy" src="assets/copy - Copy.png" alt="Copy to Clipboard Icon" onclick="phoneCopy()">
                     </div>
 
                     <div class="info-item">
@@ -257,25 +257,25 @@
                         <div class="form-item">
                             <label for="name">Namn   <span>*</span></label>
                             <input type="text" id="name" placeholder="Ert Namn" required>
-                            <span class="contact-error-message"></span>
+                            <span class="contact-error-message" aria-live="polite"></span>
                         </div>
 
                         <div class="form-item">
                             <label for="company">Företag   <span>*</span></label>
                             <input type="text" id="company" placeholder="Företagsnamn" required>
-                            <span class="contact-error-message"></span>
+                            <span class="contact-error-message" aria-live="polite"></span>
                         </div>
 
                         <div class="form-item">
                             <label for="email">E-mail   <span>*</span></label>
                             <input type="email" id="email" placeholder="your@email.com" required>
-                            <span class="contact-error-message"></span>
+                            <span class="contact-error-message" aria-live="polite"></span>
                         </div>
 
                         <div class="form-item">
                             <label for="message">Meddelande   <span>*</span></label>
                             <textarea name="message" id="message" placeholder="Meddelande..." required></textarea>
-                            <span class="contact-error-message"></span>
+                            <span class="contact-error-message" aria-live="polite"></span>
                         </div>
 
                         <!-- <input type="submit" id="submit-button" value="Skicka"> -->

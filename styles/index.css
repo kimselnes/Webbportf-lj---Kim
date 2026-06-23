@@ -588,6 +588,9 @@ h2 {
 .contact-form input:focus {
     border: none;
 }
+.contact-form input:user-invalid {
+    border: 1px solid red;
+}
 
 .contact-form textarea {
     resize: vertical;
@@ -601,6 +604,9 @@ h2 {
 .contact-form textarea:hover {
     background-color: var(--secondary-color-bright);
 }
+/* .contact-form input textarea:user-invalid {
+    border: 1px solid red;
+} */
 
 #submit-button  {
     width: fit-content;
@@ -632,6 +638,12 @@ h2 {
     margin-top: 0.2rem;
     color: rgb(255, 168, 183);
 }
+.contact-error-message:empty {
+    /* padding: 0.6rem;
+    background-color: red; */
+    display: none;
+}
+
 
 .contact-form {
 
