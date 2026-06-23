@@ -1,8 +1,11 @@
+// FORM VALIDATION
+
 const form = document.querySelector("form");
 // const nameField = document.getElementById("name");
 
 function validateField(field) {
     const errorElement = field.parentElement.querySelector(".contact-error-message");
+    // console.log(errorElement);
 
     if(!field.validity.valid) {
         console.log("field is invalid:", field.id);
@@ -51,15 +54,30 @@ form.addEventListener("submit", function (e) {
 
 });
 
+
+// SEND EMAIL FUNCTION
+
+function emailSend() {
+    let parms = {
+        name : document.getElementById("name").value,
+        company : document.getElementById("company").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value,
+    }
+
+    emailjs.send("service_ggnujk6", "template_v14okzh", parms).then(alert("Email har skickats till Kim Selnes."));
+};
+
+
+// CLIPBOARD
+
 function emailCopy() {
-    var copyText = "kimsel1990@gmail.com";
+    let copyText = "kimsel1990@gmail.com";
     navigator.clipboard.writeText(copyText);
 }
 function phoneCopy() {
-    var copyText = "0760894025";
+    let copyText = "0760894025";
     navigator.clipboard.writeText(copyText);
 }
 
-function emailSend() {
 
-};

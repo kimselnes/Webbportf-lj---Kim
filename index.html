@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
+    
+    <!-- SCRIPT FOR SENDING FORM DATA TO MY EMAIL -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "wYmvPbeRpLwnA3w58",
+            });
+        })();
+    </script>
+
     <title>Kim's Portfolio</title>
 </head>
 
@@ -252,34 +265,34 @@
 
                 </div>
                 <div class="contact-form-container">                    
-                    <form action="" class="contact-form" novalidate>
+                    <form action="https://formsubmit.co/kimsel1990@gmail.com" method="POST" class="contact-form" novalidate>
 
                         <div class="form-item">
                             <label for="name">Namn   <span>*</span></label>
-                            <input type="text" id="name" placeholder="Ert Namn" required>
+                            <input type="text" id="name" name="name" placeholder="Ert Namn" required>
                             <span class="contact-error-message" aria-live="polite"></span>
                         </div>
 
                         <div class="form-item">
                             <label for="company">Företag   <span>*</span></label>
-                            <input type="text" id="company" placeholder="Företagsnamn" required>
+                            <input type="text" id="company" name="company" placeholder="Företagsnamn" required>
                             <span class="contact-error-message" aria-live="polite"></span>
                         </div>
 
                         <div class="form-item">
                             <label for="email">E-mail   <span>*</span></label>
-                            <input type="email" id="email" placeholder="your@email.com" required>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
                             <span class="contact-error-message" aria-live="polite"></span>
                         </div>
 
                         <div class="form-item">
                             <label for="message">Meddelande   <span>*</span></label>
-                            <textarea name="message" id="message" placeholder="Meddelande..." required></textarea>
+                            <textarea name="message" id="message" name="message" placeholder="Meddelande..." required></textarea>
                             <span class="contact-error-message" aria-live="polite"></span>
                         </div>
 
                         <!-- <input type="submit" id="submit-button" value="Skicka"> -->
-                        <button id="submit-button">Skicka</button>
+                        <button type="submit" id="submit-button" onclick="emailSend()">Skicka</button>
                     </form>
                 </div>
             </div>
