@@ -90,7 +90,7 @@ const sectionElements = document.querySelectorAll("section");
 let currentSection = "home";
 window.addEventListener("scroll", () => {
     sectionElements.forEach(sectionEl => {
-        if (window.scrollY >= sectionEl.offsetTop) {
+        if (window.scrollY >= sectionEl.offsetTop - 300) {
             currentSection = sectionEl.id;
         }
     });
