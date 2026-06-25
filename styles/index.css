@@ -95,12 +95,12 @@ h2 {
 }
 
 .profile-container img {
-    width: 10em;
+    width: 10rem;
     border-radius: 4px;
 }
 
 .nav-section {
-    margin-top: 10%;
+    margin-top: auto;
     height: 40%;
 
     
