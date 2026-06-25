@@ -29,7 +29,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 input, button, select, textarea {
@@ -294,7 +294,6 @@ h2 {
     border: 2px solid transparent;
     padding: 0.8rem 2rem;
     border-radius: 2.5px;
-
 }
 
 .hero-section .buttons .btn-primary {
@@ -445,8 +444,12 @@ h2 {
     border: 1px solid var(--primary-color);
     border-left: 7px solid var(--primary-color);
     /* border-radius: 2.5px; */
-
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.267);    
+
+    transition: 0.2s ease;
+}
+.project-item:hover {
+    scale: 1.005;
 }
 
 .project-item-image {
