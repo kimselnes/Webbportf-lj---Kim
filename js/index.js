@@ -104,3 +104,28 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
+// Download CV
+
+const cvButton = document.querySelector(".btn-secondary");
+
+cvButton.addEventListener("click", alertCV);
+
+function alertCV() {
+    alert("Jag har inget CV ännu :(");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(cvButton);
+
