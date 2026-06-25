@@ -111,21 +111,18 @@ window.addEventListener("scroll", () => {
 const cvButton = document.querySelector(".btn-secondary");
 
 cvButton.addEventListener("click", alertCV);
-
 function alertCV() {
     alert("Jag har inget CV ännu :(");
 }
 
 
+// ContactMe Button
 
+const contactButton = document.querySelector(".btn-primary");
+const contactSection = document.getElementById('contact');
 
-
-
-
-
-
-
-
-
-console.log(cvButton);
+contactButton.addEventListener("click", goToContactSection);
+function goToContactSection() {
+    contactSection.scrollIntoView();
+}
 
