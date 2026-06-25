@@ -10,6 +10,7 @@
     --primary-color: #40dfaf;
     --primary-color-bright: #4bffc9;
     --primary-color-alpha50: #40dfaf7c;
+    --primary-color-alpha25: #40dfaf34;
 
     /* --primary-color: #30d884; */
     --secondary-color: #ff751f;
@@ -502,6 +503,90 @@ h2 {
     border: 1px solid var(--primary-color);
     border: 2px solid var(--secondary-color);
     border-radius: 20px;
+}
+
+
+
+/* TESTIMONIALS */
+
+.testimonials-section {
+    width: 80%;
+    height: fit-content;
+    padding-block: 3rem;
+}
+
+.testimonials-text p {
+    font-size: 1.8rem;
+    padding-block: 2rem;
+    padding-bottom: 3rem;
+    color: var(--text-secondary-color);
+}
+
+.cards-container {
+
+}
+
+.cards-list {
+
+}
+
+.card-item {
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid var(--primary-color-bright);
+    border: 2px solid var(--primary-color-alpha50);
+    border-radius: 2.5px;
+    background-color: var(--primary-color-alpha25);
+}
+
+.card-image {
+    align-self: center;
+    margin-top: auto;
+    /* justify-content: center; */
+    height: 7rem;
+    /* width: fit-content; */
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+
+    height: 60%;
+    padding: 0.5rem;
+    background-color: var(--nav-bg-color);
+    
+}
+
+.card-quote {
+
+    margin-top: auto;
+    text-align: center;
+}
+
+.card-auth {
+    color: var(--primary-color-bright);
+    font-size: 1.2rem;
+
+    text-align: center;
+    /* align-self: center; */
+
+}
+
+.card-company {
+}
+
+.card-name {
+    font-weight: 550;
+    /* color: var(--text-secondary-color); */
+    margin-top: auto;
+
+    /* margin-top: 0.5rem;     */
+    /* margin-top: auto; */
+
 }
 
 
