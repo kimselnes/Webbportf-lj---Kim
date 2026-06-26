@@ -470,10 +470,10 @@ h2 {
     width: 30%;
 
     background-color: #cccccc;
-    background-image: url("/assets/snapshot-kassasystem.png");
+    /* background-image: url(/assets/snapshot-kassasystem.png); */
     background-repeat: none;
-    background-size: cover; 
     background-position: center;
+    background-size: cover; 
 }
 
 /* .project-snapshot {
