@@ -134,9 +134,12 @@ h2 {
 
 .header .nav-item .nav-item-decoration-space .active {
     width: 6rem;
-    background-color: var(--secondary-color);    
+    background-color: var(--secondary-color);
 }
-
+.nav-item:has(.active) > a:not(.nav-item-decoration) {
+    color: white;
+    /* color: var(--secondary-color); */
+}
 
 
 .header .nav-item .nav-item-decoration-space {
