@@ -3,6 +3,7 @@
 const form = document.querySelector("form");
 
 function validateField(field) {
+    
     const errorElement = field.parentElement.querySelector(".contact-error-message");
 
     if(!field.validity.valid) {
