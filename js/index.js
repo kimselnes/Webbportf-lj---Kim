@@ -131,3 +131,10 @@ function goToContactSection() {
     contactSection.scrollIntoView();
 }
 
+
+// Project links
+
+function goToKassaSystem() {
+    window.location.href = "https://github.com/kimselnes/KassaSystem---Kim";
+}
+
