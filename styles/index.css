@@ -823,7 +823,7 @@ h2 {
     transition: 0.3s ease;
 }
 .contact-form input:hover {
-    background-color: var(--secondary-color-bright);    
+    background-color: #b8ceee;    
 }
 .contact-form input:focus {
     border: none;
@@ -842,7 +842,7 @@ h2 {
     border-radius: 2.5px;
 }
 .contact-form textarea:hover {
-    background-color: var(--secondary-color-bright);
+    background-color: #b8ceee;
 }
 /* .contact-form input textarea:user-invalid {
     border: 1px solid red;

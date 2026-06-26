@@ -100,6 +100,11 @@ window.addEventListener("scroll", () => {
             document.querySelector(".active").classList.remove("active");
             navLinkEl.classList.add("active");
             
+            // const parentElement = navLinkEl.parentNode;
+            // const targetElement = parentElement.nextElementSibling;
+
+            // navLinkEl.style.color = "rgba(255, 255, 255, 0.7)";
+            // targetElement.style.color = "white";
        } 
     });
 
