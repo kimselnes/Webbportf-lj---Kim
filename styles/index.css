@@ -12,15 +12,12 @@
     --primary-color-alpha50: #40dfaf7c;
     --primary-color-alpha25: #40dfaf34;
 
-    /* --primary-color: #30d884; */
     --secondary-color: #ff751f;
     --secondary-color-alpha50: #ff751f81;
     --secondary-color-bright: #ffd7be;
 
     --text-main-color: white;
     --text-secondary-color: rgba(255, 255, 255, 0.767);
-
-    /* #ff6f61 */
 }
 
 *, *::before, *::after {
@@ -42,7 +39,6 @@ body {
     width: 100%;
 
     font-family: "Poppins", sans-serif;
-    /* height: 200vh; */
 }
 
 ul {
@@ -70,7 +66,6 @@ h2 {
     background-color: var(--nav-bg-color);
     height: 100vh;
     width: 40%;
-    /* max-width: 600px; */
     border-right: 1px solid #264f8565;
 
     display: flex;
@@ -102,10 +97,8 @@ h2 {
 .nav-section {
     margin-top: auto;
     height: 40%;
-
-    
-    /* height: fit-content; */
 }
+
 .nav-section ul {
     height: 100%;
 }
@@ -113,7 +106,6 @@ h2 {
 .header .nav-item {
     display: flex;
     justify-content: left;
-    /* height: 2rem; */
     height: 20%;
 }
 .header .nav-item:hover {
@@ -138,7 +130,6 @@ h2 {
 }
 .nav-item:has(.active) > a:not(.nav-item-decoration) {
     color: white;
-    /* color: var(--secondary-color); */
 }
 
 
@@ -185,22 +176,6 @@ h2 {
     width: fit-content
 }
 
-/* .header .nav-section .active li {
-
-    .nav-item-decoration {
-        width: 6rem;
-        background-color: var(--secondary-color);
-    }
-    
-    a {
-        color: var(--secondary-color);
-    }
-} */
-
-.socialmedia-item {
-
-}
-
 .nav-socialmedia-item {
     width: fit-content;
     height: fit-content;
@@ -226,9 +201,7 @@ h2 {
 .main-content {
     color: white;
     background-color: var(--main-bg-color);
-    /* width: 60%; */
     width: 100%;
-    /* height: 200vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,7 +214,6 @@ h2 {
     display: flex;
     flex-direction: column;    
     justify-content: center;
-    /* margin-top: 5rem; */  /* EVENTUELLT FOR ATT FÖRHINDRA TOP WHITE SPACE */
     align-items: left;
     gap: 1.5rem;
 
@@ -279,11 +251,9 @@ h2 {
 
     border-left: 4px solid var(--primary-color);
     padding-left: 1rem;
-    /* border-radius: 2.5px; Vet inte om jag vill ah denna */
 }
 
 .hero-section .buttons {
-    /* padding-block: 0.5rem; */
     display: flex;
     justify-content: left;
     gap: 1.2rem;
@@ -303,18 +273,6 @@ h2 {
     background-color: var(--secondary-color);
     color: var(--main-bg-color);
     border: 2px solid var(--secondary-color);
-
-    /* a {
-        text-decoration: none;
-    }    
-    a:visited {
-        color: var(--main-bg-color);
-
-    }
-    a:hover {
-        color: var(--secondary-color);
-    } */
-
     transition: 0.3s ease;
 }
 .hero-section .buttons .btn-primary:hover {
@@ -330,9 +288,6 @@ h2 {
 
 .hero-section .buttons .btn-secondary {
     background-color: transparent;
-    /* color: var(--secondary-color); */
-    /* border: 1px solid var(--secondary-color); */
-
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 
@@ -353,7 +308,6 @@ h2 {
 
 
 
-
 /* KNOWLEDGE SECTION */
 
 .knowledge-section {
@@ -368,12 +322,6 @@ h2 {
     padding-bottom: 3rem;
     color: var(--text-secondary-color);
 }
-
-/* .knowledge-section h2, .knowledge-description {
-    padding-left: 3px;
-} */
-
-/* container for all the "cards" */
 .knowledge-grid {
     display: grid;
     justify-content: center;
@@ -383,16 +331,7 @@ h2 {
 
 /* knowledge "cards" */
 .knowledge-card {
-    /* display: flex; */
-    /* flex-direction: column; */
-
-    /* width: auto; */
-    /* max-height: 150px; */
-    /* height: 100px; */
-    text-align: center;
-    /* padding-block: 0.5rem; */
-
-    
+    text-align: center;    
     border: 1px solid var(--primary-color);
     border-radius: 2.5px;
 
@@ -452,12 +391,10 @@ h2 {
     cursor: pointer;
     display: flex;
     margin-bottom: 2rem;
-    /* height: 70px; */
     height: fit-content;
 
     border: 1px solid var(--primary-color);
     border-left: 7px solid var(--primary-color);
-    /* border-radius: 2.5px; */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.267);    
 
     transition: 0.2s ease;
@@ -475,10 +412,6 @@ h2 {
     background-position: center;
     background-size: cover; 
 }
-
-/* .project-snapshot {
-    width: 100px;
-} */
 
 .project-item-text {
     width: 70%;
@@ -520,7 +453,6 @@ h2 {
     background-color: var(--secondary-color-alpha50);
     width: fit-content;
 
-    /* padding: 0.1rem 0.25rem; */
     padding: 5px 10px;
     border: 1px solid var(--primary-color);
     border: 2px solid var(--secondary-color);
@@ -552,9 +484,8 @@ h2 {
 .cards-container {
 
 }
-/* carousel */
+
 .cards-list {
-    /* width: 70%; */
     width: 47rem;
     overflow-x: auto;
     margin: 2rem auto;
@@ -616,14 +547,12 @@ h2 {
     opacity: 0.5;
 }
 
-/* card */
 .card-item {
     width: 15rem;
     height: 20rem;
     display: flex;
     flex-direction: column;
 
-    /* border: 2px solid var(--primary-color-bright); */
     border: 2px solid var(--primary-color-alpha50);
     border-radius: 2.5px;
     background-color: var(--primary-color-alpha25);
@@ -634,7 +563,7 @@ h2 {
     scroll-snap-align: start;
 }
 .card-item:hover {
-    border: 2px solid var(--primary-color-bright);        
+    /* border: 2px solid var(--primary-color-bright);         */
 
 }
 .card-item::scroll-marker {
@@ -651,9 +580,7 @@ h2 {
 .card-image {
     align-self: center;
     margin-top: auto;
-    /* justify-content: center; */
     height: 7rem;
-    /* width: fit-content; */
 }
 
 .card-text {
@@ -678,8 +605,6 @@ h2 {
     font-size: 1.2rem;
 
     text-align: center;
-    /* align-self: center; */
-
 }
 
 .card-company {
@@ -687,12 +612,7 @@ h2 {
 
 .card-name {
     font-weight: 550;
-    /* color: var(--text-secondary-color); */
     margin-top: auto;
-
-    /* margin-top: 0.5rem;     */
-    /* margin-top: auto; */
-
 }
 
 
@@ -716,9 +636,6 @@ h2 {
 }
 
 .contact-info-form {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -738,14 +655,6 @@ h2 {
     color: var(--text-secondary-color);
 }
 
-/* .info-item img {
-    width: 5rem;
-    background-color: #40dfaf2a;
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 1rem;
-} */
-
 .info-icon {
     width: 5rem;
     border-radius: 10px;
@@ -762,32 +671,26 @@ h2 {
     background-color: #ff751f34;
 }
 
-.info-copy { /*SKA ÄNDRAS*/
+.info-copy {
     width: 2rem;
     height: 2rem;
     align-self: center;
     padding: 0.2rem;
     margin-left: 0.2rem;
-    /* background-color: #40dfaf42; */
-    /* border-radius: 10px; */
-    /* padding: 1rem; */
     cursor: pointer;
     border: 2px solid transparent;
     border-radius: 5px;
 }
 
 .info-copy:hover {
-    /* cursor: pointer; */
     border: 2px solid rgb(173, 173, 173);
 }
 
 .contact-info {
-    /* width: 50%; */
     padding: 1rem;
 }
 
 .contact-form-container {
-    /* width: 50%; */
     padding: 1.5rem;
 
     background-color: #40dfaf2a;
@@ -796,8 +699,6 @@ h2 {
 }
 
 .contact-form {
-    /* display: flex; */
-    /* flex-direction: column; */
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -817,7 +718,6 @@ h2 {
 
 .contact-form input {
     padding: 0.4rem;
-    /* border: var(--primary-color) solid 2px; */
     border: none;
     border-radius: 2.5px;
     outline: none;
@@ -847,9 +747,6 @@ h2 {
 .contact-form textarea:hover {
     background-color: #b8ceee;
 }
-/* .contact-form input textarea:user-invalid {
-    border: 1px solid red;
-} */
 
 #submit-button  {
     width: fit-content;
@@ -882,8 +779,6 @@ h2 {
     color: rgb(255, 168, 183);
 }
 .contact-error-message:empty {
-    /* padding: 0.6rem;
-    background-color: red; */
     display: none;
 }
 
@@ -905,16 +800,13 @@ footer {
 
 .attributes {
     width: 50%;
-    /* color: rgba(255, 255, 255, 0.6); */
     font-size: 1rem;
 
     a:link {
         color: rgba(255, 255, 255, 0.466);
-        /* text-decoration: none; */
     }
     a:visited {
         color: rgba(255, 255, 255, 0.5);
-        /* text-decoration: none; */
     }
     a:hover {
         text-decoration: underline;

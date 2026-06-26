@@ -1,11 +1,9 @@
 // FORM VALIDATION
 
 const form = document.querySelector("form");
-// const nameField = document.getElementById("name");
 
 function validateField(field) {
     const errorElement = field.parentElement.querySelector(".contact-error-message");
-    // console.log(errorElement);
 
     if(!field.validity.valid) {
         console.log("field is invalid:", field.id);
@@ -13,7 +11,6 @@ function validateField(field) {
         return false;
     }
 
-    // console.log("field is valid:", field.id);
     errorElement.textContent = "";
     return true;
 }
@@ -28,7 +25,6 @@ form.querySelectorAll("input, textarea").forEach(input => {
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // const isValid = validateField(nameField);
     let isValid = true;
 
     const fields = form.querySelectorAll("input, textarea");
@@ -46,9 +42,8 @@ form.addEventListener("submit", function (e) {
         // Send form data
 
         form.reset();
-        // console.log("submitting");
+
     } else {
-        // console.log("error - not submitting");
         form.querySelector(":invalid").focus();
     }
 
@@ -99,12 +94,6 @@ window.addEventListener("scroll", () => {
        if (navLinkEl.href.includes(currentSection)) {
             document.querySelector(".active").classList.remove("active");
             navLinkEl.classList.add("active");
-            
-            // const parentElement = navLinkEl.parentNode;
-            // const targetElement = parentElement.nextElementSibling;
-
-            // navLinkEl.style.color = "rgba(255, 255, 255, 0.7)";
-            // targetElement.style.color = "white";
        } 
     });
 
